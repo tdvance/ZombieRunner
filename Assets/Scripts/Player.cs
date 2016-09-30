@@ -6,6 +6,7 @@ public class Player : MonoBehaviour {
     public GameObject spawnPointsParent;
     public bool respawn = false;
 
+
     // Use this for initialization
     void Start() {
         ReSpawn();//start at random spawn point
@@ -17,6 +18,7 @@ public class Player : MonoBehaviour {
             ReSpawn();
             respawn = false;
         }
+
     }
 
     void ReSpawn() {
@@ -26,4 +28,5 @@ public class Player : MonoBehaviour {
         transform.position = spawnPoint.position;
         transform.rotation = spawnPoint.rotation;
     }
+
 }
